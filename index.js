@@ -410,7 +410,7 @@ module.exports = function() {
             }
           },
           transitionExists: function(animation, exists) {
-            module.exports.exists[animation] = exists;
+            _module.exports.exists[animation] = exists;
             module.verbose('Saving existence of transition', animation, exists);
           }
         },
@@ -621,7 +621,7 @@ module.exports = function() {
             return style.replace(/display.*?;/, '');
           },
           transitionExists: function(animation) {
-            return module.exports.exists[animation];
+            return _module.exports.exists[animation];
           },
           animationStartEvent: function() {
             var
